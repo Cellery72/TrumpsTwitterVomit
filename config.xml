@@ -19,6 +19,8 @@
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
   </platform>
+  <preference name="TwitterConsumerKey" value="WoAd4tiXqAZJGSFfSp0fHUFG2" />
+  <preference name="TwitterConsumerSecret" value="klMyPStKHqnb9hMaMl2XiF925ZympjYhgYFY7VZtwFeT6ccOjZ" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
