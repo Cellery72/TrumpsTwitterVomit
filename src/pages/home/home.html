@@ -1,12 +1,13 @@
 <ion-header>
   <ion-navbar>
     <ion-title text-center>
-      Trump's Tweets
+      Trump's Twitter Vomit
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content id="homeContent" padding>
+  <ion-row>
   <ion-col id="loginBtn">
     <button ion-button block>
         <div>
@@ -14,11 +15,12 @@
           <i class="fa fa-twitter fa-lg" aria-hidden="true" margin-left></i>
         </div>
       </button>
-    <button ion-button block color="light">
+    <button ion-button block color="light" (click)="openModal()" >
         <div>
-          <label>What is Trump's Tweets?</label>
+          <label>What the hell is this?</label>
           <i class="fa fa-info-circle fa-lg" aria-hidden="true" margin-left></i>
         </div>
       </button>
   </ion-col>
+  </ion-row>
 </ion-content>
