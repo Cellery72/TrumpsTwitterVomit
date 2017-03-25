@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.trumpstweets934394" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>TrumpsTweets</name>
-  <description>An awesome Ionic/Cordova app.</description>
+  <description>An application based on Trump's Twitter Vomit</description>
   <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
   <content src="index.html"/>
   <access origin="*"/>
@@ -15,11 +15,7 @@
   <platform name="android">
     <allow-intent href="market:*"/>
   </platform>
-  <platform name="ios">
-    <allow-intent href="itms:*"/>
-    <allow-intent href="itms-apps:*"/>
-  </platform>
-  <preference name="TwitterConsumerKey" value="WoAd4tiXqAZJGSFfSp0fHUFG2" />
+  <preference name="TwitterConsumerKey" value="mJcZYmUwhczEryWDIi1QRG2Xl" />
   <preference name="TwitterConsumerSecret" value="klMyPStKHqnb9hMaMl2XiF925ZympjYhgYFY7VZtwFeT6ccOjZ" />
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
@@ -38,4 +34,7 @@
   <plugin name="cordova-plugin-statusbar" spec="2.2.1"/>
   <plugin name="cordova-plugin-device" spec="1.1.4"/>
   <plugin name="cordova-plugin-splashscreen" spec="~4.0.1"/>
+  <gap:plugin name="twitter-connect-plugin" source="npm" spec="0.5.0">
+	  <param name="FABRIC_KEY" value="NwVwuHzpgjj1EVHX42rgbGAbL5c58JBWKAoqcizYpg1yW0kW5s" />
+  </gap:plugin>
 </widget>
