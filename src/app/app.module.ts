@@ -7,6 +7,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { HelpModal } from '../pages/home/modal/help-modal.component';
 import { DashboardPage } from '../pages/dashboard/dashboard';
+import { TrumpsTweetsPage } from '../pages/trumps-tweets/trumps-tweets';
 // services(providers)
 import { TwitterConnect } from '@ionic-native/twitter-connect';
 
@@ -15,7 +16,8 @@ import { TwitterConnect } from '@ionic-native/twitter-connect';
     MyApp,
     HomePage,
     HelpModal,
-    DashboardPage
+    DashboardPage,
+    TrumpsTweetsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -25,7 +27,8 @@ import { TwitterConnect } from '@ionic-native/twitter-connect';
     MyApp,
     HomePage,
     HelpModal,
-    DashboardPage
+    DashboardPage,
+    TrumpsTweetsPage
   ],
   providers: [
     StatusBar,
