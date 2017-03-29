@@ -4,6 +4,8 @@
 
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { TrumpsTweetsPage } from './../trumps-tweets/trumps-tweets';
+
 @Component({
   selector: 'page-dashboard',
   templateUrl: 'dashboard.html'
@@ -24,9 +26,13 @@ export class DashboardPage {
     // for the time being to test navigation and such, we simply pop... more to come however
     this.navCtrl.pop();
   }
-
-
-
+  
+  //function to save notification settings and direct to the trumps-tweets page
+  save() {
+    //do some saving
+    //redirect to trumps tweets page
+    this.navCtrl.push(TrumpsTweetsPage );
+  }
   // Need a function to handle possesion of the dashboard..
   // ie. if it's Trump's Dashboard or if it's Samsus' dashboard.. that ' is key
 }

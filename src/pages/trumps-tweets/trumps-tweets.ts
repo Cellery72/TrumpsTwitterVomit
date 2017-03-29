@@ -19,4 +19,8 @@ export class TrumpsTweetsPage {
     console.log('ionViewDidLoad TrumpsTweetsPage');
   }
 
+  openDashboard(){
+        this.navCtrl.pop();
+  }
+
 }
