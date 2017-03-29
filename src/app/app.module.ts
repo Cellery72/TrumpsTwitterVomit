@@ -1,3 +1,4 @@
+import { NotificationComponent } from '../pages/dashboard/notification/notification.component';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -17,7 +18,8 @@ import { TwitterConnect } from '@ionic-native/twitter-connect';
     HomePage,
     HelpModal,
     DashboardPage,
-    TrumpsTweetsPage
+    TrumpsTweetsPage,
+    NotificationComponent
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -28,7 +30,8 @@ import { TwitterConnect } from '@ionic-native/twitter-connect';
     HomePage,
     HelpModal,
     DashboardPage,
-    TrumpsTweetsPage
+    TrumpsTweetsPage,
+    NotificationComponent
   ],
   providers: [
     StatusBar,

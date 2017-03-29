@@ -5,11 +5,16 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>trumps_tweets</ion-title>
-  </ion-navbar>
-
+    <ion-navbar hideBackButton="true">
+        <ion-title text-center>
+            Trump's Vomit
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="openDashboard()">
+              <ion-icon name="settings"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
 </ion-header>
 
 

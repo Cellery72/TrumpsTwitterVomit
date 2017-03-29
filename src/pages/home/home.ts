@@ -1,4 +1,4 @@
-import { TwitterConnect } from '@ionic-native/twitter-connect';
+
 //         File: Home Page Component
 //         Date: 03-25-2017
 //  Description: The home page is the first screen upon opening the app.
@@ -8,6 +8,7 @@ import { NavController, ModalController } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { DashboardPage } from '../dashboard/dashboard';
 import { HelpModal } from './modal/help-modal.component';
+import { TwitterConnect } from '@ionic-native/twitter-connect';
 
 @Component({
   selector: 'home',
@@ -26,7 +27,16 @@ export class HomePage {
     let onError = function (response) {
       console.log(response);
     }
-    this.twitter.login().then(onSuccess, onError);
+
+    let temp: TwitterUser = {
+      _id: 11,
+      _secret: "secret",
+      _username: "Cellery72",
+      _token: "thetoken",
+      _error: ""
+    }
+    //this.twitter.login().then(onSuccess, onError);
+    this.navCtrl.push(DashboardPage, { "user": temp });
   }
 
   // Open Informative Modal
