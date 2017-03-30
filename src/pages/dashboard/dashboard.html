@@ -1,7 +1,8 @@
+<!-- Navbar with Username & logout button-->
 <ion-header>
     <ion-navbar hideBackButton="true">
         <ion-title text-center>
-            {{_user._username}}'s Dashboard
+            {{pluralizeUsername(_user._username)}} Dashboard
         </ion-title>
         <ion-buttons end>
             <button ion-button (click)="logout()">
@@ -15,11 +16,13 @@
 
 <ion-content padding>
     <ion-grid>
+
+        <!-- Notification selection - drop down list -->
         <ion-row>
             <ion-col>
                 <ion-item>
-                    <ion-label>Notifications</ion-label>
-                    <ion-select [(ngModel)]="notification_count">
+                    <ion-label>Number of Notifications</ion-label>
+                    <ion-select [(ngModel)]="notification_count" (ionChange)="updateNotifications()">
                         <ion-option value="1">1</ion-option>
                         <ion-option value="2">2</ion-option>
                         <ion-option value="3">3</ion-option>
@@ -28,14 +31,20 @@
                 </ion-item>
             </ion-col>
         </ion-row>
-        <ion-row>
-            <ion-col>
-                <notification></notification>
+
+        <!-- Notfication components representing the number of notifications selected in above DDL -->
+        <div class="the_notifications" *ngFor="let nte of _notes">
+            <notification [note]="nte"></notification>
+        </div>
+
+        <!-- DONE button - opens Trump's Tweets page -->
+        <ion-row padding>
+            <ion-col text-center>
+                <button ion-button icon-right color="secondary" outline (click)="save()">Done!
+              <ion-icon name="checkmark"></ion-icon>
+            </button>
             </ion-col>
         </ion-row>
+
     </ion-grid>
-      
 </ion-content>
-<ion-footer>
-        <ion-icon color="secondary" (click)="save()" ios="ios-checkmark-circle-outline" md="md-checkmark-circle-outline"></ion-icon>
-  </ion-footer>
