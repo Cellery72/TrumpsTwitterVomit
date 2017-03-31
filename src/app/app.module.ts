@@ -1,3 +1,4 @@
+import { NativeStorage } from '@ionic-native/native-storage';
 import { NotificationComponent } from '../pages/dashboard/notification/notification.component';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
@@ -22,7 +23,9 @@ import { TwitterConnect } from '@ionic-native/twitter-connect';
     NotificationComponent
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      mode: "md"
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,6 +40,7 @@ import { TwitterConnect } from '@ionic-native/twitter-connect';
     StatusBar,
     SplashScreen,
     TwitterConnect,
+    NativeStorage,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })

@@ -7,6 +7,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { TrumpsTweetsPage } from './../trumps-tweets/trumps-tweets';
 import { TimedNotification } from '../../models/timednotification.model';
 import { TwitterUser } from '../../models/twitteruser.model';
+import { NativeStorage } from '@ionic-native/native-storage';
 
 @Component({
   selector: 'page-dashboard',
@@ -19,7 +20,7 @@ export class DashboardPage {
   private notification_count: number = 1;
 
   // default constructor
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private nativeStorage: NativeStorage) {
     // setting the local user on construction
     this._user = (navParams.data != null) ? navParams.data.user : null;
 
@@ -54,9 +55,16 @@ export class DashboardPage {
 
   //Logout function
   private logout(): void {
+    //console.log(this.storage.getUser());
     // for the time being to test navigation and such, we simply pop... more to come however
-    this.navCtrl.pop();
+    //this.navCtrl.pop();
     //console.log(this._notes);
+    this.nativeStorage.getItem('currentUser')
+      .then(
+      data => console.log(data),
+      error => console.log(error)
+      );
+
   }
 
 
@@ -64,7 +72,8 @@ export class DashboardPage {
   private save(): void {
     //do some saving
     //redirect to trumps tweets page
-    this.navCtrl.push(TrumpsTweetsPage);
+    //this.navCtrl.push(TrumpsTweetsPage);
+
   }
 
 
