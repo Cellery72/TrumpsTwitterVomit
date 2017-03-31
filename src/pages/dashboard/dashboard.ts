@@ -64,7 +64,7 @@ export class DashboardPage {
   private save(): void {
     //do some saving
     //redirect to trumps tweets page
-    this.navCtrl.push(TrumpsTweetsPage);
+    this.navCtrl.push(TrumpsTweetsPage, {user: this._user});
   }
 
 
