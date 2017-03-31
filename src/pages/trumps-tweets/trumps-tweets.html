@@ -19,5 +19,13 @@
 
 
 <ion-content padding>
+    <ion-card *ngFor="let tweet of tweets">
+        <ion-card-header>
+            {{ tweet.user.name }} at {{ tweet.created_at }}
+        </ion-card-header>
+        <ion-card-content>
+            {{ tweet.text }}
+        </ion-card-content>
+    </ion-card>
 
 </ion-content>
