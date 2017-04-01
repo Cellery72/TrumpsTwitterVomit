@@ -19,15 +19,16 @@ import { NativeStorage } from '@ionic-native/native-storage';
 })
 export class HomePage {
   private loading: Loading;
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public twitter: TwitterConnect, 
-  public twitterSrv: TwitterService, public loadingCtrl: LoadingController, public alertCtrl: AlertController) {
+
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public twitter: TwitterConnect,
+    public twitterSrv: TwitterService, public loadingCtrl: LoadingController, public alertCtrl: AlertController, public nativeStorage: NativeStorage) {
   }
- 
-login() {
+
+  login() {
     //temp user for web testing
-      let temp: TwitterUser = new TwitterUser(1, "Cellery72", "secret", "token", "");
+    let temp: TwitterUser = new TwitterUser(1, "Cellery72", "secret", "token", "");
     this.navCtrl.push(DashboardPage, { "user": temp });
-    
+
     //using twitter connect on mobile
     // this.showLoading();
     // this.twitter.login().then((data) => {
@@ -40,16 +41,16 @@ login() {
 
   onSuccess(response) {
     console.log("success:", response);
-     let _user = new TwitterUser(response.userId, response.userName, response.secret, response.token, "");
-     this.nativeStorage.setItem('currentUser', { id: _user.getID(), username: _user.getUsername() })
+    let _user = new TwitterUser(response.userId, response.userName, response.secret, response.token, "");
+    this.nativeStorage.setItem('currentUser', { id: _user.getID(), username: _user.getUsername() })
       .then(
       () => console.log('Stored item!'),
       error => console.error('Error storing item', error)
       );
-      this.navCtrl.push(DashboardPage, { "user": _user})
+    this.navCtrl.push(DashboardPage, { "user": _user })
     setTimeout(() => {
-        this.loading.dismiss();
-      });
+      this.loading.dismiss();
+    });
     // this.twitterSrv.signIn(_user);
   }
 
@@ -78,7 +79,7 @@ login() {
     alert.present(prompt);
   }
 
-    // Open Informative Modal
+  // Open Informative Modal
   openModal() {
     let helpModal = this.modalCtrl.create(HelpModal);
     helpModal.present();
