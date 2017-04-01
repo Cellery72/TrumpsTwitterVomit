@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { TwitterService } from '../../providers/twitter.service';
+
+import { TwitterUser } from '../../models/twitteruser.model';
+import { Tweet } from '../../models/tweet.model';
+
 
 /*
   Generated class for the TrumpsTweets page.
@@ -12,15 +17,18 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'trumps-tweets.html'
 })
 export class TrumpsTweetsPage {
+  private _user: TwitterUser;
+  private tweets = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TrumpsTweetsPage');
+  constructor(public navCtrl: NavController, public navParams: NavParams, public twitterSrv: TwitterService ) {
+    this._user = (navParams.data != null) ? navParams.data.user : null;
   }
-
-  openDashboard(){
-        this.navCtrl.pop();
+ ionViewWillEnter() {
+    this.twitterSrv.getTweets()
+      .subscribe(payload => {
+        this.tweets = payload
+      });
   }
 
 }
