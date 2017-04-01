@@ -7,16 +7,20 @@ export class TimedNotification {
   private _time: string;
 
   // default constructor
-  constructor(id: number) {
+  constructor(id: number, time?: string) {
     this._id = id;
-    let temp
-    let tempTime = new Date();
+    if (time != null) {
+      this._time = time;
+    }
+    else {
+      let tempTime = new Date();
 
-    setInterval(() => {
-      tempTime = new Date();
-    }, 1000);
-    //this._time = tempTime.getHours() + ":" + tempTime.getMinutes();
-    this._time = tempTime.getHours() + ":" + tempTime.getMinutes();
+      setInterval(() => {
+        tempTime = new Date();
+      }, 1000);
+      //this._time = tempTime.getHours() + ":" + tempTime.getMinutes();
+      this._time = tempTime.getHours() + ":" + tempTime.getMinutes();
+    }
   }
 
   // GETTERS

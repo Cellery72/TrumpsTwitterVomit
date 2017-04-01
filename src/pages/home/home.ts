@@ -10,7 +10,7 @@ import { HelpModal } from './modal/help-modal.component';
 import { TwitterConnect } from '@ionic-native/twitter-connect';
 import { TwitterService } from '../../providers/twitter.service';
 import { TwitterUser } from '../../models/twitteruser.model';
-
+import { NativeStorage } from '@ionic-native/native-storage';
 
 
 @Component({
@@ -41,6 +41,11 @@ login() {
   onSuccess(response) {
     console.log("success:", response);
      let _user = new TwitterUser(response.userId, response.userName, response.secret, response.token, "");
+     this.nativeStorage.setItem('currentUser', { id: _user.getID(), username: _user.getUsername() })
+      .then(
+      () => console.log('Stored item!'),
+      error => console.error('Error storing item', error)
+      );
       this.navCtrl.push(DashboardPage, { "user": _user})
     setTimeout(() => {
         this.loading.dismiss();
@@ -49,11 +54,10 @@ login() {
   }
 
 
+
   onError(response) {
     this.showError(response);
   }
-
-
   showLoading() {
     this.loading = this.loadingCtrl.create({
       content: 'Please wait...'
@@ -76,8 +80,17 @@ login() {
 
     // Open Informative Modal
   openModal() {
-    console.log('hello');
     let helpModal = this.modalCtrl.create(HelpModal);
     helpModal.present();
   }
+
+  public checkUserCredentials(): void {
+    let user: TwitterUser;
+    this.nativeStorage.getItem('currentUser')
+      .then(
+      data => user = data,
+      error => console.log(error)
+      );
+  }
 }
+
