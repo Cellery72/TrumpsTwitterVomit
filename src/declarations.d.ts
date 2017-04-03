@@ -12,4 +12,3 @@
   https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html
 */
 declare module '*';
-import * as jsSHA from "jssha";
