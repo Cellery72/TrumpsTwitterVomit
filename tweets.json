@@ -1,0 +1,1429 @@
+[{
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7cde"
+        },
+        "real_date": {
+            "$date": "2017-04-03T00:58:29.000+0000"
+        },
+        "id": 8.4870120131518874E+17,
+        "favorite_count": 22153,
+        "retweet_count": 5645,
+        "created_at": "Mon Apr 03 00:58:29 +0000 2017",
+        "full_text": "Melania and I are honored to light up the @WhiteHouse this evening, for \n#WorldAutismAwarenessDay. Join us &amp; #LIUB. https://t.co/o07NPQTCyK https://t.co/7zzwSwBdZK",
+        "entities": {
+            "media": [{
+                "sizes": {
+                    "medium": {
+                        "resize": "fit",
+                        "h": 629,
+                        "w": 1014
+                    },
+                    "thumb": {
+                        "resize": "crop",
+                        "h": 150,
+                        "w": 150
+                    },
+                    "large": {
+                        "resize": "fit",
+                        "h": 629,
+                        "w": 1014
+                    },
+                    "small": {
+                        "resize": "fit",
+                        "h": 422,
+                        "w": 680
+                    }
+                },
+                "type": "photo",
+                "expanded_url": "https://twitter.com/realDonaldTrump/status/848701201315188736/photo/1",
+                "display_url": "pic.twitter.com/7zzwSwBdZK",
+                "url": "https://t.co/7zzwSwBdZK",
+                "media_url_https": "https://pbs.twimg.com/media/C8cxPXPXYAET2oy.jpg",
+                "media_url": "http://pbs.twimg.com/media/C8cxPXPXYAET2oy.jpg",
+                "indices": [
+                    144,
+                    167
+                ],
+                "id_str": "848701194788888577",
+                "id": 8.4870119478888858E+17
+            }],
+            "urls": [{
+                "indices": [
+                    120,
+                    143
+                ],
+                "display_url": "45.wh.gov/TE8ak1",
+                "expanded_url": "http://45.wh.gov/TE8ak1",
+                "url": "https://t.co/o07NPQTCyK"
+            }],
+            "user_mentions": [{
+                "indices": [
+                    42,
+                    53
+                ],
+                "id_str": "822215673812119553",
+                "id": 8.2221567381211955E+17,
+                "name": "The White House",
+                "screen_name": "WhiteHouse"
+            }],
+            "symbols": [],
+            "hashtags": [{
+                    "indices": [
+                        73,
+                        97
+                    ],
+                    "text": "WorldAutismAwarenessDay"
+                },
+                {
+                    "indices": [
+                        113,
+                        118
+                    ],
+                    "text": "LIUB"
+                }
+            ]
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "possibly_sensitive": false,
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7cdf"
+        },
+        "real_date": {
+            "$date": "2017-04-02T13:34:16.000+0000"
+        },
+        "id": 8.485290146670551E+17,
+        "favorite_count": 56686,
+        "retweet_count": 14517,
+        "created_at": "Sun Apr 02 13:34:16 +0000 2017",
+        "full_text": "The real story turns out to be SURVEILLANCE and LEAKING! Find the leakers.",
+        "entities": {
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce0"
+        },
+        "real_date": {
+            "$date": "2017-04-02T13:03:43.000+0000"
+        },
+        "id": 8.4852132548020224E+17,
+        "favorite_count": 52257,
+        "retweet_count": 10472,
+        "created_at": "Sun Apr 02 13:03:43 +0000 2017",
+        "full_text": "Talks on Repealing and Replacing ObamaCare are, and have been, going on, and will continue until such time as a deal is hopefully struck.",
+        "entities": {
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce1"
+        },
+        "real_date": {
+            "$date": "2017-04-02T12:56:49.000+0000"
+        },
+        "id": 8.4851958767520154E+17,
+        "favorite_count": 58122,
+        "retweet_count": 12597,
+        "created_at": "Sun Apr 02 12:56:49 +0000 2017",
+        "full_text": "Anybody (especially  Fake News media) who thinks that Repeal &amp; Replace of ObamaCare is dead does not know the love and strength in R Party!",
+        "entities": {
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce3"
+        },
+        "real_date": {
+            "$date": "2017-04-01T17:02:29.000+0000"
+        },
+        "id": 8.4821902765901005E+17,
+        "favorite_count": 55882,
+        "retweet_count": 14184,
+        "created_at": "Sat Apr 01 17:02:29 +0000 2017",
+        "full_text": "..not associated with Russia. Trump team spied on before he was nominated.\" If this is true, does not get much bigger. Would be sad for U.S.",
+        "entities": {
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce2"
+        },
+        "real_date": {
+            "$date": "2017-04-01T22:21:02.000+0000"
+        },
+        "id": 8.482991916465152E+17,
+        "favorite_count": 44611,
+        "retweet_count": 11961,
+        "created_at": "Sat Apr 01 22:21:02 +0000 2017",
+        "full_text": "Thank you @JCLayfield -- will get even better as my Administration continues to put #AmericaFirst🇺🇸 https://t.co/AQQzmt10x7",
+        "entities": {
+            "media": [{
+                "sizes": {
+                    "large": {
+                        "resize": "fit",
+                        "h": 360,
+                        "w": 640
+                    },
+                    "small": {
+                        "resize": "fit",
+                        "h": 191,
+                        "w": 340
+                    },
+                    "medium": {
+                        "resize": "fit",
+                        "h": 338,
+                        "w": 600
+                    },
+                    "thumb": {
+                        "resize": "crop",
+                        "h": 150,
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "expanded_url": "https://twitter.com/realDonaldTrump/status/848299191646515202/video/1",
+                "display_url": "pic.twitter.com/AQQzmt10x7",
+                "url": "https://t.co/AQQzmt10x7",
+                "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/848298986469548035/pu/img/mjsii_0IqJk_8Th0.jpg",
+                "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/848298986469548035/pu/img/mjsii_0IqJk_8Th0.jpg",
+                "indices": [
+                    100,
+                    123
+                ],
+                "id_str": "848298986469548035",
+                "id": 8.4829898646954803E+17
+            }],
+            "urls": [],
+            "user_mentions": [{
+                "indices": [
+                    10,
+                    21
+                ],
+                "id_str": "32117870",
+                "id": 32117870,
+                "name": "John Layfield",
+                "screen_name": "JCLayfield"
+            }],
+            "symbols": [],
+            "hashtags": [{
+                "indices": [
+                    84,
+                    97
+                ],
+                "text": "AmericaFirst"
+            }]
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "possibly_sensitive": false,
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce4"
+        },
+        "real_date": {
+            "$date": "2017-04-01T16:50:36.000+0000"
+        },
+        "id": 8.4821603515312128E+17,
+        "favorite_count": 53100,
+        "retweet_count": 14700,
+        "created_at": "Sat Apr 01 16:50:36 +0000 2017",
+        "full_text": "Wow, @FoxNews just reporting big news. Source: \"Official behind unmasking is high up. Known Intel official is responsible. Some unmasked....",
+        "entities": {
+            "urls": [],
+            "user_mentions": [{
+                "indices": [
+                    5,
+                    13
+                ],
+                "id_str": "1367531",
+                "id": 1367531,
+                "name": "Fox News",
+                "screen_name": "FoxNews"
+            }],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce5"
+        },
+        "real_date": {
+            "$date": "2017-04-01T16:06:14.000+0000"
+        },
+        "id": 8.4820487087635661E+17,
+        "favorite_count": 44174,
+        "retweet_count": 9177,
+        "created_at": "Sat Apr 01 16:06:14 +0000 2017",
+        "full_text": "...use subsidies to buy health plans.\" In other words, Ocare is dead. Good things will happen, however, either with Republicans or Dems.",
+        "entities": {
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce6"
+        },
+        "real_date": {
+            "$date": "2017-04-01T15:59:36.000+0000"
+        },
+        "id": 8.4820320109448397E+17,
+        "favorite_count": 42368,
+        "retweet_count": 10308,
+        "created_at": "Sat Apr 01 15:59:36 +0000 2017",
+        "full_text": "The failing @nytimes finally gets it - \"In places where no insurance company offers plans, there will be no way for ObamaCare customers to..",
+        "entities": {
+            "urls": [],
+            "user_mentions": [{
+                "indices": [
+                    12,
+                    20
+                ],
+                "id_str": "807095",
+                "id": 807095,
+                "name": "The New York Times",
+                "screen_name": "nytimes"
+            }],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce7"
+        },
+        "real_date": {
+            "$date": "2017-04-01T15:35:12.000+0000"
+        },
+        "id": 8.4819706062514586E+17,
+        "favorite_count": 0,
+        "retweet_count": 6222,
+        "created_at": "Sat Apr 01 15:35:12 +0000 2017",
+        "full_text": "RT @DanScavino: .@POTUS @realDonaldTrump signs executive orders on trade that will set the stage for revival in American manufacturing. #Am…",
+        "entities": {
+            "urls": [],
+            "user_mentions": [{
+                    "indices": [
+                        3,
+                        14
+                    ],
+                    "id_str": "620571475",
+                    "id": 620571475,
+                    "name": "Dan Scavino Jr.",
+                    "screen_name": "DanScavino"
+                },
+                {
+                    "indices": [
+                        17,
+                        23
+                    ],
+                    "id_str": "822215679726100480",
+                    "id": 8.2221567972610048E+17,
+                    "name": "President Trump",
+                    "screen_name": "POTUS"
+                },
+                {
+                    "indices": [
+                        24,
+                        40
+                    ],
+                    "id_str": "25073877",
+                    "id": 25073877,
+                    "name": "Donald J. Trump",
+                    "screen_name": "realDonaldTrump"
+                }
+            ],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce8"
+        },
+        "real_date": {
+            "$date": "2017-04-01T13:02:32.000+0000"
+        },
+        "id": 8.481586410563625E+17,
+        "favorite_count": 78498,
+        "retweet_count": 21014,
+        "created_at": "Sat Apr 01 13:02:32 +0000 2017",
+        "full_text": "It is the same Fake News Media that said there is \"no path to victory for Trump\" that is now pushing the phony Russia story. A total scam!",
+        "entities": {
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ceb"
+        },
+        "real_date": {
+            "$date": "2017-03-31T19:37:00.000+0000"
+        },
+        "id": 8.4789552463212954E+17,
+        "favorite_count": 40312,
+        "retweet_count": 9019,
+        "created_at": "Fri Mar 31 19:37:00 +0000 2017",
+        "full_text": "'Trump Celebrates American Manufacturing Survey Showing Highest Level of Optimism in 20 Years' ➡️https://t.co/hSaj7eEHx9 https://t.co/r3rILZyTJP",
+        "entities": {
+            "media": [{
+                "sizes": {
+                    "large": {
+                        "resize": "fit",
+                        "h": 788,
+                        "w": 940
+                    },
+                    "medium": {
+                        "resize": "fit",
+                        "h": 788,
+                        "w": 940
+                    },
+                    "thumb": {
+                        "resize": "crop",
+                        "h": 150,
+                        "w": 150
+                    },
+                    "small": {
+                        "resize": "fit",
+                        "h": 570,
+                        "w": 680
+                    }
+                },
+                "type": "photo",
+                "expanded_url": "https://twitter.com/realDonaldTrump/status/847895524632129536/photo/1",
+                "display_url": "pic.twitter.com/r3rILZyTJP",
+                "url": "https://t.co/r3rILZyTJP",
+                "media_url_https": "https://pbs.twimg.com/media/C8RUdr_VYAAzpN2.jpg",
+                "media_url": "http://pbs.twimg.com/media/C8RUdr_VYAAzpN2.jpg",
+                "indices": [
+                    121,
+                    144
+                ],
+                "id_str": "847895498853801984",
+                "id": 8.4789549885380198E+17
+            }],
+            "urls": [{
+                "indices": [
+                    97,
+                    120
+                ],
+                "display_url": "45.wh.gov/o6bLge",
+                "expanded_url": "http://45.wh.gov/o6bLge",
+                "url": "https://t.co/hSaj7eEHx9"
+            }],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "possibly_sensitive": false,
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7ce9"
+        },
+        "real_date": {
+            "$date": "2017-04-01T12:43:32.000+0000"
+        },
+        "id": 8.4815386060250726E+17,
+        "favorite_count": 71710,
+        "retweet_count": 20643,
+        "created_at": "Sat Apr 01 12:43:32 +0000 2017",
+        "full_text": "When will Sleepy Eyes Chuck Todd and @NBCNews start talking about the Obama SURVEILLANCE SCANDAL and stop with the Fake Trump/Russia story?",
+        "entities": {
+            "urls": [],
+            "user_mentions": [{
+                "indices": [
+                    37,
+                    45
+                ],
+                "id_str": "14173315",
+                "id": 14173315,
+                "name": "NBC News",
+                "screen_name": "NBCNews"
+            }],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7cea"
+        },
+        "real_date": {
+            "$date": "2017-03-31T21:31:44.000+0000"
+        },
+        "id": 8.4792439718058394E+17,
+        "favorite_count": 60614,
+        "retweet_count": 13803,
+        "created_at": "Fri Mar 31 21:31:44 +0000 2017",
+        "full_text": "We are going to defend our industry &amp; create a level playing field for the American worker. It is time to put #AmericaFirst &amp; #MAGA! https://t.co/GUWx7JqvCi",
+        "entities": {
+            "media": [{
+                "sizes": {
+                    "large": {
+                        "resize": "fit",
+                        "h": 360,
+                        "w": 640
+                    },
+                    "small": {
+                        "resize": "fit",
+                        "h": 191,
+                        "w": 340
+                    },
+                    "medium": {
+                        "resize": "fit",
+                        "h": 338,
+                        "w": 600
+                    },
+                    "thumb": {
+                        "resize": "crop",
+                        "h": 150,
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "expanded_url": "https://twitter.com/realDonaldTrump/status/847924397180583937/video/1",
+                "display_url": "pic.twitter.com/GUWx7JqvCi",
+                "url": "https://t.co/GUWx7JqvCi",
+                "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/847922070222774272/img/FHEWV1G7ivK3F9ex.jpg",
+                "media_url": "http://pbs.twimg.com/amplify_video_thumb/847922070222774272/img/FHEWV1G7ivK3F9ex.jpg",
+                "indices": [
+                    141,
+                    164
+                ],
+                "id_str": "847922070222774272",
+                "id": 8.4792207022277427E+17
+            }],
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": [{
+                    "indices": [
+                        114,
+                        127
+                    ],
+                    "text": "AmericaFirst"
+                },
+                {
+                    "indices": [
+                        134,
+                        139
+                    ],
+                    "text": "MAGA"
+                }
+            ]
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "possibly_sensitive": false,
+        "source": "<a href=\"https://ads.twitter.com\" rel=\"nofollow\">Twitter Ads</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7cf0"
+        },
+        "real_date": {
+            "$date": "2017-03-31T11:04:32.000+0000"
+        },
+        "id": 8.4776655852085658E+17,
+        "favorite_count": 71880,
+        "retweet_count": 17588,
+        "created_at": "Fri Mar 31 11:04:32 +0000 2017",
+        "full_text": "Mike Flynn should ask for immunity in that this is a witch hunt (excuse for big election loss), by media &amp; Dems, of historic proportion!",
+        "entities": {
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": []
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "58e1a5663c55925f9c2e7cec"
+        },
+        "real_date": {
+            "$date": "2017-03-31T18:30:38.000+0000"
+        },
+        "id": 8.4787882022085837E+17,
+        "favorite_count": 53988,
+        "retweet_count": 13042,
+        "created_at": "Fri Mar 31 18:30:38 +0000 2017",
+        "full_text": "It is an exciting time for our country!\n#WeeklyAddress #ConfirmGorsuch https://t.co/tP4bkvTOBq",
+        "entities": {
+            "media": [{
+                "sizes": {
+                    "medium": {
+                        "resize": "fit",
+                        "h": 360,
+                        "w": 640
+                    },
+                    "large": {
+                        "resize": "fit",
+                        "h": 360,
+                        "w": 640
+                    },
+                    "small": {
+                        "resize": "fit",
+                        "h": 360,
+                        "w": 640
+                    },
+                    "thumb": {
+                        "resize": "crop",
+                        "h": 150,
+                        "w": 150
+                    }
+                },
+                "type": "photo",
+                "expanded_url": "https://twitter.com/realDonaldTrump/status/847878820220858369/video/1",
+                "display_url": "pic.twitter.com/tP4bkvTOBq",
+                "url": "https://t.co/tP4bkvTOBq",
+                "media_url_https": "https://pbs.twimg.com/media/C8RE94BV0AA1fp3.jpg",
+                "media_url": "http://pbs.twimg.com/media/C8RE94BV0AA1fp3.jpg",
+                "indices": [
+                    71,
+                    94
+                ],
+                "id_str": "847872609492410368",
+                "id": 8.4787260949241037E+17
+            }],
+            "urls": [],
+            "user_mentions": [],
+            "symbols": [],
+            "hashtags": [{
+                    "indices": [
+                        40,
+                        54
+                    ],
+                    "text": "WeeklyAddress"
+                },
+                {
+                    "indices": [
+                        55,
+                        70
+                    ],
+                    "text": "ConfirmGorsuch"
+                }
+            ]
+        },
+        "user": {
+            "translator_type": "regular",
+            "notifications": false,
+            "follow_request_sent": false,
+            "following": true,
+            "default_profile_image": false,
+            "default_profile": false,
+            "has_extended_profile": false,
+            "profile_use_background_image": true,
+            "profile_text_color": "333333",
+            "profile_sidebar_fill_color": "C5CEC0",
+            "profile_sidebar_border_color": "BDDCAD",
+            "profile_link_color": "0D5B73",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/25073877/1489657715",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_image_url": "http://pbs.twimg.com/profile_images/1980294624/DJT_Headshot_V2_normal.jpg",
+            "profile_background_tile": true,
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/530021613/trump_scotland__43_of_70_cc.jpg",
+            "profile_background_color": "6D5C18",
+            "is_translation_enabled": true,
+            "is_translator": false,
+            "contributors_enabled": false,
+            "lang": "en",
+            "statuses_count": 34695,
+            "verified": true,
+            "geo_enabled": true,
+            "time_zone": "Eastern Time (US & Canada)",
+            "utc_offset": -14400,
+            "favourites_count": 47,
+            "created_at": "Wed Mar 18 13:46:38 +0000 2009",
+            "listed_count": 67488,
+            "friends_count": 43,
+            "followers_count": 27306624,
+            "protected": false,
+            "entities": {
+                "description": {
+                    "urls": []
+                }
+            },
+            "url": null,
+            "description": "45th President of the United States of America",
+            "location": "Washington, DC",
+            "screen_name": "realDonaldTrump",
+            "name": "Donald J. Trump",
+            "id_str": "25073877",
+            "id": 25073877
+        },
+        "possibly_sensitive": false,
+        "source": "<a href=\"https://ads.twitter.com\" rel=\"nofollow\">Twitter Ads</a>",
+        "__v": 0
+    }
+]
