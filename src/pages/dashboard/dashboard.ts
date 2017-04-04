@@ -57,7 +57,7 @@ export class DashboardPage {
   private logout(): void {
     //console.log(this.storage.getUser());
     // for the time being to test navigation and such, we simply pop... more to come however
-    //this.navCtrl.pop();
+    this.navCtrl.pop();
     //console.log(this._notes);
     this.nativeStorage.getItem('currentUser')
       .then(

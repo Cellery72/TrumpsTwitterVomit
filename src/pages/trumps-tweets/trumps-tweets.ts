@@ -27,4 +27,8 @@ export class TrumpsTweetsPage {
       });
   }
 
+  openDashboard(){
+      this.navCtrl.pop();
+   }
+
 }
