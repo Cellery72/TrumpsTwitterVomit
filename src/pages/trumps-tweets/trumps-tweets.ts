@@ -3,9 +3,6 @@ import { NavController, NavParams } from 'ionic-angular';
 import { TwitterService } from '../../providers/twitter.service';
 
 import { TwitterUser } from '../../models/twitteruser.model';
-import { Tweet } from '../../models/tweet.model';
-
-
 /*
   Generated class for the TrumpsTweets page.
 
@@ -19,7 +16,6 @@ import { Tweet } from '../../models/tweet.model';
 export class TrumpsTweetsPage {
   private _user: TwitterUser;
   private tweets = [];
-
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public twitterSrv: TwitterService ) {
     this._user = (navParams.data != null) ? navParams.data.user : null;
