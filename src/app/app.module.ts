@@ -1,8 +1,11 @@
+import { NativeStorage } from '@ionic-native/native-storage';
 import { NotificationComponent } from '../pages/dashboard/notification/notification.component';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LocalNotifications } from '@ionic-native/local-notifications';
+
 // components
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -11,6 +14,9 @@ import { DashboardPage } from '../pages/dashboard/dashboard';
 import { TrumpsTweetsPage } from '../pages/trumps-tweets/trumps-tweets';
 // services(providers)
 import { TwitterConnect } from '@ionic-native/twitter-connect';
+import { TwitterService } from '../providers/twitter.service';
+
+
 
 @NgModule({
   declarations: [
@@ -22,7 +28,9 @@ import { TwitterConnect } from '@ionic-native/twitter-connect';
     NotificationComponent
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {
+      mode: "md"
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -36,8 +44,11 @@ import { TwitterConnect } from '@ionic-native/twitter-connect';
   providers: [
     StatusBar,
     SplashScreen,
+    TwitterService,
     TwitterConnect,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    NativeStorage,
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    LocalNotifications
   ]
 })
 export class AppModule { }

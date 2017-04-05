@@ -12,24 +12,25 @@
     </ion-navbar>
 </ion-header>
 
-
-
 <ion-content padding>
+
+    <!-- Notification selection - drop down list -->
+    <ion-col width-100>
+        <ion-item>
+            <ion-label>Number of Notifications</ion-label>
+            <ion-select [(ngModel)]="notification_count" (ionChange)="updateNotifications()">
+                <ion-option value="0">None please!</ion-option>
+                <ion-option value="1">1</ion-option>
+                <ion-option value="2">2</ion-option>
+                <ion-option value="3">3</ion-option>
+                <ion-option value="4">4</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-col>
+
     <ion-grid>
 
-        <!-- Notification selection - drop down list -->
         <ion-row>
-            <ion-col>
-                <ion-item>
-                    <ion-label>Number of Notifications</ion-label>
-                    <ion-select [(ngModel)]="notification_count" (ionChange)="updateNotifications()">
-                        <ion-option value="1">1</ion-option>
-                        <ion-option value="2">2</ion-option>
-                        <ion-option value="3">3</ion-option>
-                        <ion-option value="4">4</ion-option>
-                    </ion-select>
-                </ion-item>
-            </ion-col>
         </ion-row>
 
         <!-- Notfication components representing the number of notifications selected in above DDL -->
@@ -39,8 +40,8 @@
 
         <!-- DONE button - opens Trump's Tweets page -->
         <ion-row padding>
-            <ion-col text-center>
-                <button ion-button icon-right color="secondary" outline (click)="save()">Done!
+            <ion-col text-center width-50 offset-25>
+                <button ion-button icon-right block color="secondary" outline (click)="save()">Done!
               <ion-icon name="checkmark"></ion-icon>
             </button>
             </ion-col>
