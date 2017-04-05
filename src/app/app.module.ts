@@ -4,6 +4,8 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LocalNotifications } from '@ionic-native/local-notifications';
+
 // components
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -45,7 +47,8 @@ import { TwitterService } from '../providers/twitter.service';
     TwitterService,
     TwitterConnect,
     NativeStorage,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    LocalNotifications
   ]
 })
 export class AppModule { }
