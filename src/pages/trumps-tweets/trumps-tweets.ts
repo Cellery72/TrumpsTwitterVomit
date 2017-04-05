@@ -23,8 +23,12 @@ export class TrumpsTweetsPage {
  ionViewWillEnter() {
     this.twitterSrv.getTweets()
       .subscribe(payload => {
-        this.tweets = payload
+        this.tweets = payload    
       });
   }
+
+  openDashboard(){
+      this.navCtrl.pop();
+   }
 
 }

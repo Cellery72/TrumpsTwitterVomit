@@ -14,12 +14,7 @@ export class TwitterService  {
     }
     
     getTweets(){
-    //  let headers = new Headers({ 'Content-Type': 'application/json' });
-    //   headers.append('Authorization', '<insert signature here>');
-    //   return this.http.get('/api/statuses/user_timeline.json?screen_name=realdonaldtrump&user_id=25073877', {headers: headers})
-    //   .map(data => data.json())
-       return this.http.get('./assets/tweets.json')
+           return this.http.get('https://trumpstwittervomit.com/tweets')
        .map(data => data.json())
     }
- 
 }
