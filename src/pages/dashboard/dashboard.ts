@@ -27,7 +27,7 @@ export class DashboardPage {
     this._notes.push(notey);
     this._user = (navParams.data != null) ? navParams.data.user : null;
   }
-
+  
   private setDate(time) {
     let currentDate = new Date();
     let hours = time.split(':')[0]
@@ -58,14 +58,13 @@ export class DashboardPage {
         () => console.log('Updated user: ' + this._user.userName + '\'s successfully'),
         error => console.error('Error updating user', error)
     );
-    
+  
     this.notifications.schedule(notifications);
   }
   // Update the Notification Array upon Dropdown selection change
   private updateNotifications(): void {
     let lastCount = this._notes.length;
     let newCount = this.notification_count;
-
 
     // add/remove appropriate amount of notifications from the array
     if (newCount > lastCount) {
