@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 import { DashboardPage } from '../dashboard/dashboard';
 import { HelpModal } from './modal/help-modal.component';
 import { TwitterConnect } from '@ionic-native/twitter-connect';
-import { TwitterService } from '../../providers/twitter.service';
 import { TwitterUser } from '../../models/twitteruser.model';
 import { NativeStorage } from '@ionic-native/native-storage';
 
@@ -20,41 +19,40 @@ import { NativeStorage } from '@ionic-native/native-storage';
 export class HomePage {
   private loading: Loading;
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public twitter: TwitterConnect,
-    public twitterSrv: TwitterService, public loadingCtrl: LoadingController, public alertCtrl: AlertController, public nativeStorage: NativeStorage) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public twitter: TwitterConnect, public loadingCtrl: LoadingController, public alertCtrl: AlertController, public nativeStorage: NativeStorage) {
   }
+
 
   login() {
     //temp user for web testing
-    let temp: TwitterUser = new TwitterUser(1, "Cellery72", "secret", "token", "");
-    this.navCtrl.push(DashboardPage, { "user": temp });
+    // let temp: TwitterUser = new TwitterUser(1, "Cellery72", "secret", "token", "");
+    // this.navCtrl.push(DashboardPage, { "user": temp });
 
     //using twitter connect on mobile
-    // this.showLoading();
-    // this.twitter.login().then((data) => {
-    //   this.onSuccess(data);
-    // }, error => {
-    //   this.onError(error);
-    // })
+    this.showLoading();
+    this.twitter.login().then((data) => {
+      this.onSuccess(data);
+    }, error => {
+      this.onError(error);
+    })
   }
 
 
   onSuccess(response) {
-    console.log("success:", response);
-    let _user = new TwitterUser(response.userId, response.userName, response.secret, response.token, "");
-    this.nativeStorage.setItem('currentUser', { id: _user.getID(), username: _user.getUsername() })
+    console.log("success:", response)
+    this.nativeStorage.setItem('currentUser', response )
       .then(
-      () => console.log('Stored item!'),
-      error => console.error('Error storing item', error)
+      () => {
+        console.log('Stored user!')
+        this.navCtrl.push(DashboardPage, {"user": response})
+      },
+      error => console.error('Error storing user', error)
       );
-    this.navCtrl.push(DashboardPage, { "user": _user })
+     
     setTimeout(() => {
       this.loading.dismiss();
     });
-    // this.twitterSrv.signIn(_user);
   }
-
-
 
   onError(response) {
     this.showError(response);

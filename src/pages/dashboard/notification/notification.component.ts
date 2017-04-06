@@ -16,5 +16,5 @@ export class NotificationComponent {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  
 }
