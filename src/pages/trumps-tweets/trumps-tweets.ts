@@ -1,14 +1,14 @@
+//         File: Trumps-Tweets Component
+//         Date: 04-05-2017
+//  Description: The trumps-tweets page displays a list of the most recent tweets
+
+
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TwitterService } from '../../providers/twitter.service';
-
+import { NativeStorage } from '@ionic-native/native-storage';
 import { TwitterUser } from '../../models/twitteruser.model';
-/*
-  Generated class for the TrumpsTweets page.
 
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-trumps-tweets',
   templateUrl: 'trumps-tweets.html'
@@ -17,15 +17,20 @@ export class TrumpsTweetsPage {
   private _user: TwitterUser;
   private tweets = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public twitterSrv: TwitterService ) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public twitterSrv: TwitterService, public nativeStorage: NativeStorage ) {
     this._user = (navParams.data != null) ? navParams.data.user : null;
   }
- ionViewWillEnter() {
-    this.twitterSrv.getTweets()
-      .subscribe(payload => {
-        this.tweets = payload    
-      });
-  }
+  ionViewWillEnter() {
+    // Grabs the most recent tweets - user specifies the count
+    this.twitterSrv.getRecentTweets(5)
+      .subscribe(data => this.tweets = data);
+
+    this.nativeStorage.getItem('currentUser')
+      .then( 
+        user => user.notifications ? console.log('notifications present') : console.log('no notifications'),
+        error => console.error('Error retrieving user', error)
+  );
+}
 
   openDashboard(){
       this.navCtrl.pop();

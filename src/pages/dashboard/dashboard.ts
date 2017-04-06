@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TrumpsTweetsPage } from './../trumps-tweets/trumps-tweets';
 import { TimedNotification } from '../../models/timednotification.model';
-import { TwitterUser } from '../../models/twitteruser.model';
 import { NativeStorage } from '@ionic-native/native-storage';
 import { LocalNotifications } from '@ionic-native/local-notifications';
 
@@ -16,22 +15,20 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 })
 export class DashboardPage {
 
-  private _user: TwitterUser;
+  public _user;
   private _notes: TimedNotification[] = new Array();
-  private notification_count: number = 1;
+  private notification_count: number = 0;
   private date: Date;
 
   // default constructor
   constructor(public navCtrl: NavController, public navParams: NavParams, private nativeStorage: NativeStorage, private notifications: LocalNotifications) {
-    // setting the local user on construction
-    this._user = (navParams.data != null) ? navParams.data.user : null;
-
     // create a single note to start
     let notey = new TimedNotification(1);
     this._notes.push(notey);
-
+    this._user = (navParams.data != null) ? navParams.data.user : null;
   }
-  private setDate(time){
+
+  private setDate(time) {
     let currentDate = new Date();
     let hours = time.split(':')[0]
     let minutes = time.split(':')[1]
@@ -55,8 +52,14 @@ export class DashboardPage {
       }
       notifications.push(newNotification)
     })
-      
-      this.notifications.schedule(notifications);
+    
+    this.nativeStorage.setItem('currentUser', {id: this._user.id, userName: this._user.userName, token: this._user.secret, secret: this._user.token, notifications: notifications})
+      .then(
+        () => console.log('Updated user: ' + this._user.userName + '\'s successfully'),
+        error => console.error('Error updating user', error)
+    );
+    
+    this.notifications.schedule(notifications);
   }
   // Update the Notification Array upon Dropdown selection change
   private updateNotifications(): void {
@@ -86,22 +89,19 @@ export class DashboardPage {
     //console.log(this.storage.getUser());
     // for the time being to test navigation and such, we simply pop... more to come however
     this.navCtrl.pop();
-    //console.log(this._notes);
-    this.nativeStorage.getItem('currentUser')
-      .then(
-      data => console.log(data),
-      error => console.log(error)
-      );
 
   }
 
 
   //function to save notification settings and direct to the trumps-tweets page
   private save(): void {
+    console.log('saving notifications')
     //do some saving
     this.setNotifications()
+      
     //redirect to trumps tweets page
-    this.navCtrl.push(TrumpsTweetsPage, {user: this._user});
+    this.navCtrl.push(TrumpsTweetsPage);
+
   }
 
 
