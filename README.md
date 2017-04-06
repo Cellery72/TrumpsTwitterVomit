@@ -1,6 +1,11 @@
+
+![TrumpsTwitterVomit Logo](https://i.imgur.com/JdqtwXx.png)
 # Trump's Twitter Vomit 
 
 Trump's Twitter Vomit is a mobile application written with Ionic 2 and Cordova PhoneGap that will update you once daily if Trump has tweeted any HUGE deals or FAKE NEWS lately.
+
+
+
 
 ## Motivation
 
