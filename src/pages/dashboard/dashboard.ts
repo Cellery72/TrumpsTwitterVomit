@@ -31,7 +31,7 @@ export class DashboardPage {
     this._notes.push(notey);
 
   }
-  private setDate(time){
+  private setDate(time) {
     let currentDate = new Date();
     let hours = time.split(':')[0]
     let minutes = time.split(':')[1]
@@ -55,8 +55,8 @@ export class DashboardPage {
       }
       notifications.push(newNotification)
     })
-      
-      this.notifications.schedule(notifications);
+
+    this.notifications.schedule(notifications);
   }
   // Update the Notification Array upon Dropdown selection change
   private updateNotifications(): void {
@@ -99,9 +99,9 @@ export class DashboardPage {
   //function to save notification settings and direct to the trumps-tweets page
   private save(): void {
     //do some saving
-    this.setNotifications()
+    //this.setNotifications()
     //redirect to trumps tweets page
-    this.navCtrl.push(TrumpsTweetsPage, {user: this._user});
+    this.navCtrl.push(TrumpsTweetsPage, { user: this._user });
   }
 
 
