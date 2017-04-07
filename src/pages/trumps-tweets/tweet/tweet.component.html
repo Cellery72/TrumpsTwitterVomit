@@ -1,8 +1,32 @@
 <ion-card>
-    <ion-card-header>
-        {{ theTweet.user.name }} at {{ theTweet.created_at }}
-    </ion-card-header>
-    <ion-card-content>
-        {{ theTweet.full_text }}
+
+    <!-- User's Profile -->
+    <ion-item>
+        <ion-avatar item-left>
+            <img [src]="theTweet.user.profile_image_url">
+        </ion-avatar>
+        <h2>{{theTweet.user.name}}</h2>
+        <p>@{{theTweet.user.screen_name}}</p>
+    </ion-item>
+
+    <!-- The Tweet Content -->
+    <ion-card-content [innerHTML]="theTweet.full_text">
     </ion-card-content>
+
+    <!-- Various buttons to interact with the tweet -->
+    <ion-row>
+        <ion-col>
+            <button ion-button class="icons" icon-left clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>Retweet</div>
+            </button>
+        </ion-col>
+        <ion-col>
+            <button ion-button class="icons" icon-left clear small>
+              <ion-icon  name="md-star"></ion-icon>
+              <div>Favorite</div>
+            </button>
+        </ion-col>
+    </ion-row>
+
 </ion-card>

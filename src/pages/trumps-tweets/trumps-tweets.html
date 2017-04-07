@@ -1,6 +1,6 @@
 <ion-header>
-    <ion-navbar color="custom1" hideBackButton="true">
-        <ion-title text-center>
+    <ion-navbar color="custom2" hideBackButton="true">
+        <ion-title text-center class="title">
             Trump's Vomit
         </ion-title>
         <ion-buttons end>
@@ -12,9 +12,9 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content paddings class="background">
 
-    <div *ngFor="let twt of tweets">
+    <div *ngFor="let twt of tweets" class="background">
         <tweet [theTweet]="twt"></tweet>
     </div>
 

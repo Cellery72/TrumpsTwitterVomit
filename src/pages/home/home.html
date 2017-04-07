@@ -1,28 +1,33 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title text-center>
-      Trump's Twitter Vomit
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar color="custom2">
+        <ion-title text-center>
+            Trump's Twitter Vomit
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content id="homeContent" padding>
-  <ion-row>
-    <ion-col id="loginBtn">
-      <button ion-button block (click)="login()">
+    <ion-row>
+        <ion-col id="loginBtn">
+            <button ion-button block (click)="login()">
         <div>
-          <label>Sign In with Twitter</label>
+          <label class="button-labels">Sign In with Twitter</label>
           <i class="fa fa-twitter fa-lg" aria-hidden="true" margin-left></i>
         </div>
       </button>
-      <div>
-      </div>
-      <button ion-button block color="light" (click)="openModal()">
+            <div>
+            </div>
+            <button ion-button block color="light" (click)="openModal()">
         <div>
-          <label>What the hell is this?</label>
+          <label class="button-labels">What the hell is this?</label>
           <i class="fa fa-info-circle fa-lg" aria-hidden="true" margin-left></i>
         </div>
       </button>
-    </ion-col>
-  </ion-row>
+        </ion-col>
+    </ion-row>
 </ion-content>
+<ion-footer text-center>
+    <div class="bottom_bar">
+        <p id="theOutro">Copyright © 2017 - Check out the <a href="https://github.com/Cellery72/TrumpsTwitterVomit">source!</a></p>
+    </div>
+</ion-footer>
