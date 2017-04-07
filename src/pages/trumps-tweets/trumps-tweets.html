@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-navbar hideBackButton="true">
+    <ion-navbar color="custom1" hideBackButton="true">
         <ion-title text-center>
             Trump's Vomit
         </ion-title>
@@ -13,13 +13,9 @@
 
 
 <ion-content padding>
-    <ion-card *ngFor="let tweet of tweets">
-        <ion-card-header>
-            {{ tweet.user.name }} at {{ tweet.created_at }}
-        </ion-card-header>
-        <ion-card-content>
-            {{ tweet.full_text }}
-        </ion-card-content>
-    </ion-card>
+
+    <div *ngFor="let twt of tweets">
+        <tweet [theTweet]="twt"></tweet>
+    </div>
 
 </ion-content>

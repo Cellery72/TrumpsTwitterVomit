@@ -22,12 +22,9 @@ export class DashboardPage {
 
   // default constructor
   constructor(public navCtrl: NavController, public navParams: NavParams, private nativeStorage: NativeStorage, private notifications: LocalNotifications) {
-    // create a single note to start
-    let notey = new TimedNotification(1);
-    this._notes.push(notey);
     this._user = (navParams.data != null) ? navParams.data.user : null;
   }
-  
+
   private setDate(time) {
     let currentDate = new Date();
     let hours = time.split(':')[0]
@@ -52,13 +49,13 @@ export class DashboardPage {
       }
       notifications.push(newNotification)
     })
-    
+
     this.nativeStorage.setItem('currentUser', {id: this._user.id, userName: this._user.userName, token: this._user.secret, secret: this._user.token, notifications: notifications})
       .then(
         () => console.log('Updated user: ' + this._user.userName + '\'s successfully'),
         error => console.error('Error updating user', error)
     );
-  
+
     this.notifications.schedule(notifications);
   }
   // Update the Notification Array upon Dropdown selection change
@@ -97,7 +94,7 @@ export class DashboardPage {
     console.log('saving notifications')
     //do some saving
     this.setNotifications()
-      
+
     //redirect to trumps tweets page
     this.navCtrl.push(TrumpsTweetsPage);
 
