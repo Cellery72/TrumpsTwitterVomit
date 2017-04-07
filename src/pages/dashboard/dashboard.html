@@ -2,7 +2,7 @@
 <ion-header>
     <ion-navbar hideBackButton="true">
         <ion-title text-center>
-            {{pluralizeUsername(_user.userName)}} Dashboard
+            {{_user && pluralizeUsername(_user.userName)}} Dashboard
         </ion-title>
         <ion-buttons end>
             <button ion-button (click)="logout()">
@@ -17,9 +17,9 @@
     <!-- Notification selection - drop down list -->
     <ion-col width-100>
         <ion-item>
-            <ion-label>Number of Notifications</ion-label>
+            <ion-label>Notifications</ion-label>
             <ion-select [(ngModel)]="notification_count" (ionChange)="updateNotifications()">
-                <ion-option value="0">None please!</ion-option>
+                <ion-option value="0">None!</ion-option>
                 <ion-option value="1">1</ion-option>
                 <ion-option value="2">2</ion-option>
                 <ion-option value="3">3</ion-option>
@@ -34,7 +34,7 @@
         </ion-row>
 
         <!-- Notfication components representing the number of notifications selected in above DDL -->
-        <div class="the_notifications" *ngFor="let nte of _notes">
+        <div class="the_notifications" *ngFor="let nte of _notes" [hidden]="!notification_count">
             <notification [note]="nte"></notification>
         </div>
 

@@ -24,14 +24,7 @@ export class TrumpsTweetsPage {
     // Grabs the most recent tweets - user specifies the count
     this.twitterSrv.getRecentTweets(5)
       .subscribe(data => this.tweets = data);
-
-    this.nativeStorage.getItem('currentUser')
-      .then( 
-        user => user.notifications ? console.log('notifications present') : console.log('no notifications'),
-        error => console.error('Error retrieving user', error)
-  );
 }
-
   openDashboard(){
       this.navCtrl.pop();
    }

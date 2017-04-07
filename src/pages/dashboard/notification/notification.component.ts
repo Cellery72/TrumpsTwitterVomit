@@ -5,6 +5,7 @@
 import { Component, Input } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TimedNotification } from '../../../models/timednotification.model';
+import { NativeStorage } from '@ionic-native/native-storage';
 
 @Component({
   selector: 'notification',
@@ -14,7 +15,7 @@ export class NotificationComponent {
 
   @Input() note: TimedNotification;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public nativeStorage: NativeStorage) {
   }
   
 }

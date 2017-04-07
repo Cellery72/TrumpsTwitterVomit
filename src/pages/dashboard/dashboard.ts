@@ -16,50 +16,73 @@ import { LocalNotifications } from '@ionic-native/local-notifications';
 export class DashboardPage {
 
   public _user;
-  private _notes: TimedNotification[] = new Array();
-  private notification_count: number = 0;
+  private _notes: Array<TimedNotification>;
+  private notification_count: number;
   private date: Date;
 
   // default constructor
-  constructor(public navCtrl: NavController, public navParams: NavParams, private nativeStorage: NativeStorage, private notifications: LocalNotifications) {
-    // create a single note to start
-    let notey = new TimedNotification(1);
-    this._notes.push(notey);
-    this._user = (navParams.data != null) ? navParams.data.user : null;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public nativeStorage: NativeStorage, public notifications: LocalNotifications) {
+    let notey = new TimedNotification(1, '12:00');
+    // this._notes.push(notey);
+    
+  }
+  ionViewWillEnter(){
+    this.nativeStorage.getItem('currentUser')
+      .then(user => {
+          this._user = user
+          if(user.notifications){
+            this._notes = user.notifications.map(note => {
+              return new TimedNotification(note.id, note.at.match(/([0-9][0-9]:[0-9][0-9])/g)[0])
+            })     
+          }else {
+            this._notes = []
+          }
+          this.notification_count = this._notes.length;            
+        }
+      )
   }
 
   private setDate(time) {
     let currentDate = new Date();
     let hours = time.split(':')[0]
     let minutes = time.split(':')[1]
-    let newDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDay(), hours, minutes)
-    console.log(newDate)
+    let newDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), hours - 4, minutes)
     return newDate;
   }
 
   private setNotifications() {
     let notifications = [];
-    let currentDate = new Date();
     this._notes.map(note => {
+      let at = this.setDate(note.getTime())
       let newNotification = {
-        id: this._notes.indexOf(note),
+        id: this._notes.indexOf(note)+1,
         title: 'Trump\'s Twitter Vomit',
         text: 'Check if Trump\'s saying something stupid again',
         icon: 'http://example.com/icon.png',
-        at: this.setDate(note.getTime()),
+        at: at,
         every: 'day',
         sound: 'file://sound.mp3'
       }
       notifications.push(newNotification)
     })
-    
+
     this.nativeStorage.setItem('currentUser', {id: this._user.id, userName: this._user.userName, token: this._user.secret, secret: this._user.token, notifications: notifications})
       .then(
-        () => console.log('Updated user: ' + this._user.userName + '\'s successfully'),
+        () => console.log('Updated notification\'s successfully'),
         error => console.error('Error updating user', error)
     );
+
     
     this.notifications.schedule(notifications);
+
+//to check scheduled notifications
+    this.notifications.getScheduledIds()
+      .then(ids => {
+        ids.forEach(id => {
+          this.notifications.get(id)
+            .then(notif => console.log(JSON.stringify(notif)))
+        })
+      })
   }
   // Update the Notification Array upon Dropdown selection change
   private updateNotifications(): void {
@@ -72,6 +95,7 @@ export class DashboardPage {
       let iterations = newCount - lastCount;
       for (var num = 0; num < iterations; num++) {
         let newNotification = new TimedNotification(this._notes.length + 1);
+        console.log(JSON.stringify(newNotification))
         this._notes.push(newNotification);
       }
     }
@@ -86,8 +110,18 @@ export class DashboardPage {
 
   //Logout function
   private logout(): void {
-    //console.log(this.storage.getUser());
-    // for the time being to test navigation and such, we simply pop... more to come however
+    //clear all notifications stored
+    this.notifications.cancelAll()
+      .then(
+        () => console.log('Cleared all notifications'),
+        error => console.error(error)
+      )
+    //remove currentUser from storage then pop navCtrl
+    this.nativeStorage.clear()
+      .then(
+        () => console.log('User Data removed'),
+        error => console.log('Error - ' + error)
+      )
     this.navCtrl.pop();
 
   }
@@ -95,7 +129,7 @@ export class DashboardPage {
 
   //function to save notification settings and direct to the trumps-tweets page
   private save(): void {
-    console.log('saving notifications')
+
     //do some saving
     this.setNotifications()
       
