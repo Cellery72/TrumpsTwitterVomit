@@ -11,7 +11,6 @@ import { TwitterConnect } from '@ionic-native/twitter-connect';
 import { TwitterUser } from '../../models/twitteruser.model';
 import { NativeStorage } from '@ionic-native/native-storage';
 
-
 @Component({
   selector: 'home',
   templateUrl: 'home.html'
@@ -34,6 +33,10 @@ export class HomePage {
     }
 
   login() {
+    //temp user for web testing
+    //let temp: TwitterUser = new TwitterUser(1, "Cellery72", "secret", "token", "");
+    //this.navCtrl.push(DashboardPage, { "user": temp });
+
     //using twitter connect on mobile
     this.showLoading();
     this.twitter.login().then((data) => {
@@ -46,15 +49,15 @@ export class HomePage {
 
   onSuccess(response) {
     console.log("success:", response)
-    this.nativeStorage.setItem('currentUser', response )
+    this.nativeStorage.setItem('currentUser', response)
       .then(
       () => {
         console.log('Stored user!')
-        this.navCtrl.push(DashboardPage)
+        this.navCtrl.push(DashboardPage);
       },
       error => console.error('Error storing user', error)
       );
-     
+
     setTimeout(() => {
       this.loading.dismiss();
     });
