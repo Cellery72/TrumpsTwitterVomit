@@ -1,4 +1,3 @@
-import { TrumpsTweetsPage } from '../trumps-tweets/trumps-tweets';
 //         File: Home Page Component
 //         Date: 03-25-2017
 //  Description: The home page is the first screen upon opening the app.
@@ -11,7 +10,6 @@ import { HelpModal } from './modal/help-modal.component';
 import { TwitterConnect } from '@ionic-native/twitter-connect';
 import { TwitterUser } from '../../models/twitteruser.model';
 import { NativeStorage } from '@ionic-native/native-storage';
-
 
 @Component({
   selector: 'home',
@@ -26,16 +24,16 @@ export class HomePage {
 
   login() {
     //temp user for web testing
-    let temp: TwitterUser = new TwitterUser(1, "Cellery72", "secret", "token", "");
-    this.navCtrl.push(DashboardPage, { "user": temp });
+    //let temp: TwitterUser = new TwitterUser(1, "Cellery72", "secret", "token", "");
+    //this.navCtrl.push(DashboardPage, { "user": temp });
 
     //using twitter connect on mobile
-    //this.showLoading();
-    //this.twitter.login().then((data) => {
-    //  this.onSuccess(data);
-    //}, error => {
-    //  this.onError(error);
-    //})
+    this.showLoading();
+    this.twitter.login().then((data) => {
+      this.onSuccess(data);
+    }, error => {
+      this.onError(error);
+    })
   }
 
 
@@ -81,9 +79,7 @@ export class HomePage {
   // Open Informative Modal
   openModal() {
     let helpModal = this.modalCtrl.create(HelpModal);
-    //helpModal.present();
-
-    this.navCtrl.push(TrumpsTweetsPage);
+    helpModal.present();
   }
 
   public checkUserCredentials(): void {
