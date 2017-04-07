@@ -3,40 +3,40 @@
 //  Description: TwitterUser is a model to represent the details for an authenticated twitter user.
 
 export class TwitterUser {
-  private _id: number;
-  private _username: string;
-  private _secret: string;
-  private _token: string;
-  private _error: string;
+  private id: number;
+  private userName: string;
+  private secret: string;
+  private token: string;
+  private error: string;
 
   // default constructor
   constructor(id: number, username: string, secret: string, token: string, error: string) {
-    this._id = id;
-    this._username = username;
-    this._secret = secret;
-    this._token = token;
-    this._error = error;
+    this.id = id;
+    this.userName = username;
+    this.secret = secret;
+    this.token = token;
+    this.error = error;
   }
 
   // Getters
   public getID(): number {
-    return this._id;
+    return this.id;
   }
   public getUsername(): string {
-    return this._username;
+    return this.userName;
   }
   public getSecret(): string {
-    return this._secret;
+    return this.secret;
   }
   public getToken(): string {
-    return this._token;
+    return this.token;
   }
   public getError(): string {
-    return this._error;
+    return this.error;
   }
 
   // Setters
   public updateError(error: string): void {
-    this._error = error;
+    this.error = error;
   }
 }
