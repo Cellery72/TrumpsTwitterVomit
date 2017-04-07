@@ -21,6 +21,16 @@ export class HomePage {
   constructor(public navCtrl: NavController, public modalCtrl: ModalController, public twitter: TwitterConnect, public loadingCtrl: LoadingController, public alertCtrl: AlertController, public nativeStorage: NativeStorage) {
   }
 
+   private ionViewWillEnter(){
+     this.nativeStorage.getItem('currentUser')
+      .then(
+        user => {
+          console.log('Welcome ' + JSON.stringify(user.userName))
+          this.navCtrl.push(DashboardPage)
+        },
+        error => console.log('User not found')
+      );
+    }
 
   login() {
     //temp user for web testing
@@ -43,7 +53,7 @@ export class HomePage {
       .then(
       () => {
         console.log('Stored user!')
-        this.navCtrl.push(DashboardPage, { "user": response })
+        this.navCtrl.push(DashboardPage);
       },
       error => console.error('Error storing user', error)
       );
