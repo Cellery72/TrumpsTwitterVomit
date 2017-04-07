@@ -7,25 +7,20 @@
 </ion-header>
 
 <ion-content id="homeContent" padding>
-    <ion-row>
-        <ion-col id="loginBtn">
-            <button ion-button block (click)="login()">
-        <div>
-          <label class="button-labels">Sign In with Twitter</label>
-          <i class="fa fa-twitter fa-lg" aria-hidden="true" margin-left></i>
-        </div>
-      </button>
-            <div>
-            </div>
-            <button ion-button block color="light" (click)="openModal()">
-        <div>
-          <label class="button-labels">What the hell is this?</label>
-          <i class="fa fa-info-circle fa-lg" aria-hidden="true" margin-left></i>
-        </div>
-      </button>
+    <ion-row text-center>
+        <ion-col id="buttonsColumn">
+            <button ion-button round icon-right (click)="login()">
+              Sign In with Twitter
+            <ion-icon name="logo-twitter"></ion-icon>
+            </button>
+            <button ion-button round icon-right color="light" (click)="openModal()">
+              What the hell is this
+            <ion-icon name="help-circle"></ion-icon>
+            </button>
         </ion-col>
     </ion-row>
 </ion-content>
+
 <ion-footer text-center>
     <div class="bottom_bar">
         <p id="theOutro">Copyright © 2017 - Check out the <a href="https://github.com/Cellery72/TrumpsTwitterVomit">source!</a></p>
