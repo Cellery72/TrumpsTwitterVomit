@@ -71,8 +71,6 @@ export class DashboardPage {
         () => console.log('Updated notification\'s successfully'),
         error => console.error('Error updating user', error)
     );
-
-    
     this.notifications.schedule(notifications);
 
 //to check scheduled notifications

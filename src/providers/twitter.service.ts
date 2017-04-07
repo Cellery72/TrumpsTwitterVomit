@@ -91,5 +91,5 @@ export class TwitterService {
     console.error(errMsg);
     return Promise.reject(errMsg);
   }
-
+  
 }
