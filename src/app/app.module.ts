@@ -51,7 +51,7 @@ import { TwitterService } from '../providers/twitter.service';
     TwitterConnect,
     NativeStorage,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    LocalNotifications
+    LocalNotifications,
   ]
 })
 export class AppModule { }
