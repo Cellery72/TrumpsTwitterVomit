@@ -73,7 +73,7 @@ export class DashboardPage {
     );
     this.notifications.schedule(notifications);
 
-    //to check scheduled notifications
+//to check scheduled notifications
     this.notifications.getScheduledIds()
       .then(ids => {
         ids.forEach(id => {
@@ -130,7 +130,7 @@ export class DashboardPage {
 
     //do some saving
     this.setNotifications()
-
+      
     //redirect to trumps tweets page
     this.navCtrl.push(TrumpsTweetsPage);
 

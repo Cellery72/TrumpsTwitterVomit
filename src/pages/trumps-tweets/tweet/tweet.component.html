@@ -16,13 +16,13 @@
     <!-- Various buttons to interact with the tweet -->
     <ion-row>
         <ion-col>
-            <button ion-button class="icons" icon-left clear small>
+            <button ion-button class="icons" icon-left clear small (click)="openLinkURL(theTweet)">
               <ion-icon name="thumbs-up"></ion-icon>
               <div>Retweet</div>
             </button>
         </ion-col>
         <ion-col>
-            <button ion-button class="icons" icon-left clear small>
+            <button ion-button class="icons" icon-left clear small (click)="openLinkURL(theTweet)">
               <ion-icon  name="md-star"></ion-icon>
               <div>Favorite</div>
             </button>

@@ -17,4 +17,10 @@ export class TweetComponent {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+   openLinkURL(tweet) {
+    //url based off tweet data
+    let url = `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}/`
+    console.log(url)
+    window.open(url, '_system', 'location=no');  
+  }
 }
