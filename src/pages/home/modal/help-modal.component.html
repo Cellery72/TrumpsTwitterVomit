@@ -1,23 +1,23 @@
 <ion-content padding>
-  <ion-grid>
+    <ion-grid>
 
-    <ion-row class="heading" padding-top text-center>
-      <ion-col>
-        <h2>What did I just download?</h2>
-      </ion-col>
-    </ion-row>
+        <ion-row class="heading" padding text-center>
+            <ion-col>
+                <h2>What did I just download?</h2>
+            </ion-col>
+        </ion-row>
 
-    <ion-row class="blurb">
-      <ion-col>
+        <ion-row class="blurb">
+            <ion-col>
+                <p>Mauris tristique turpis sit amet quam blandit ornare at et turpis. Sed consequat maximus lectus, quis egestas arcu ultrices ut. Nullam tortor sem, porta sed lectus quis, molestie cursus sapien. Nullam vestibulum dictum urna. Nullam turpis
+                    quam, semper eu lorem ut, pharetra tempor urna. Aenean aliquam ipsum ut dui lacinia fringilla. Praesent nec nunc tristique, hendrerit ex quis, maximus nibh. Curabitur hendrerit lacus lectus, et efficitur lorem blandit porta.</p>
+            </ion-col>
+        </ion-row>
 
-      </ion-col>
-    </ion-row>
+        <!-- FAB - closes modal -->
+        <ion-fab left bottom>
+            <button ion-fab color="danger" (click)="dismiss()"><ion-icon name="md-arrow-round-back"></ion-icon></button>
+        </ion-fab>
 
-    <ion-row class="buttons">
-      <ion-col width-100>
-        <button ion-button color="danger" (click)="dismiss()">Close</button>
-      </ion-col>
-    </ion-row>
-
-  </ion-grid>
+    </ion-grid>
 </ion-content>

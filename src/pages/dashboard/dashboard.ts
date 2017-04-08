@@ -24,22 +24,25 @@ export class DashboardPage {
   constructor(public navCtrl: NavController, public navParams: NavParams, public nativeStorage: NativeStorage, public notifications: LocalNotifications) {
     let notey = new TimedNotification(1, '12:00');
     // this._notes.push(notey);
-    
+
   }
-  ionViewWillEnter(){
+  ionViewWillEnter() {
+    // check localstorage for the currentUser item
     this.nativeStorage.getItem('currentUser')
       .then(user => {
-          this._user = user
-          if(user.notifications){
-            this._notes = user.notifications.map(note => {
-              return new TimedNotification(note.id, note.at.match(/([0-9][0-9]:[0-9][0-9])/g)[0])
-            })     
-          }else {
-            this._notes = []
-          }
-          this.notification_count = this._notes.length;            
+        // grab the user obj
+        this._user = user
+
+        // check we have notifications
+        if (user.notifications) {
+          this._notes = user.notifications.map(note => {
+            return new TimedNotification(note.id, note.at.match(/([0-9][0-9]:[0-9][0-9])/g)[0])
+          })
+        } else {
+          this._notes = []
         }
-      )
+        this.notification_count = this._notes.length;
+      });
   }
 
   private setDate(time) {
@@ -52,10 +55,14 @@ export class DashboardPage {
 
   private setNotifications() {
     let notifications = [];
+
+    // Map our TimedNotification class to the local notification class format
     this._notes.map(note => {
-      let at = this.setDate(note.getTime())
+
+      let at = this.setDate(note.getTime());
+
       let newNotification = {
-        id: this._notes.indexOf(note)+1,
+        id: this._notes.indexOf(note) + 1,
         title: 'Trump\'s Twitter Vomit',
         text: 'Check if Trump\'s saying something stupid again',
         icon: 'http://example.com/icon.png',
@@ -63,17 +70,22 @@ export class DashboardPage {
         every: 'day',
         sound: 'file://sound.mp3'
       }
-      notifications.push(newNotification)
-    })
 
-    this.nativeStorage.setItem('currentUser', {id: this._user.id, userName: this._user.userName, token: this._user.secret, secret: this._user.token, notifications: notifications})
+      // Add the notification to our array
+      notifications.push(newNotification);
+
+    });
+
+    // save the currentUser property in local storage
+    this.nativeStorage.setItem('currentUser', { id: this._user.id, userName: this._user.userName, token: this._user.secret, secret: this._user.token, notifications: notifications })
       .then(
-        () => console.log('Updated notification\'s successfully'),
-        error => console.error('Error updating user', error)
-    );
+      () => console.log('Updated notification\'s successfully'),
+      error => console.error('Error updating user', error)
+      );
+    // schedule the array of notifications we've created
     this.notifications.schedule(notifications);
 
-    //to check scheduled notifications
+    //to check scheduled notifications - print them to console
     this.notifications.getScheduledIds()
       .then(ids => {
         ids.forEach(id => {
@@ -84,9 +96,9 @@ export class DashboardPage {
   }
   // Update the Notification Array upon Dropdown selection change
   private updateNotifications(): void {
+    // grab the lastCount of notifications and the new count of notifications
     let lastCount = this._notes.length;
     let newCount = this.notification_count;
-
 
     // add/remove appropriate amount of notifications from the array
     if (newCount > lastCount) {
@@ -108,20 +120,19 @@ export class DashboardPage {
 
   //Logout function
   private logout(): void {
-    //clear all notifications stored
+    //cancel all notifications stored
     this.notifications.cancelAll()
       .then(
-        () => console.log('Cleared all notifications'),
-        error => console.error(error)
+      () => console.log('Cleared all notifications'),
+      error => console.error(error)
       )
     //remove currentUser from storage then pop navCtrl
     this.nativeStorage.clear()
       .then(
-        () => console.log('User Data removed'),
-        error => console.log('Error - ' + error)
+      () => console.log('User Data removed'),
+      error => console.log('Error - ' + error)
       )
     this.navCtrl.pop();
-
   }
 
 

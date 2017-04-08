@@ -27,6 +27,8 @@
   <platform name="android">
     <allow-intent href="market:*"/>
   </platform>
+  <preference name="TwitterConsumerKey" value="mJcZYmUwhczEryWDIi1QRG2Xl"/>
+  <preference name="TwitterConsumerSecret" value="NwVwuHzpgjj1EVHX42rgbGAbL5c58JBWKAoqcizYpg1yW0kW5s"/>
   <preference name="deployment-target" value="7.0"/>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
