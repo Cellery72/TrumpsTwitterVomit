@@ -40,6 +40,14 @@ export class DashboardPage {
           this.notification_count = this._notes.length;            
         }
       )
+           //to check scheduled notifications
+    this.notifications.getScheduledIds()
+      .then(ids => {
+        ids.forEach(id => {
+          this.notifications.get(id)
+            .then(notif => console.log(JSON.stringify(notif)))
+        })
+      })
   }
 
   private setDate(time) {
@@ -71,16 +79,14 @@ export class DashboardPage {
         () => console.log('Updated notification\'s successfully'),
         error => console.error('Error updating user', error)
     );
-    this.notifications.schedule(notifications);
 
-//to check scheduled notifications
-    this.notifications.getScheduledIds()
-      .then(ids => {
-        ids.forEach(id => {
-          this.notifications.get(id)
-            .then(notif => console.log(JSON.stringify(notif)))
-        })
-      })
+    this.notifications.cancelAll().then(() => {
+        this.notifications.schedule(notifications);
+        notifications = [];
+    })
+ 
+
+
   }
   // Update the Notification Array upon Dropdown selection change
   private updateNotifications(): void {
