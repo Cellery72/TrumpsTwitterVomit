@@ -18,6 +18,7 @@ export class TrumpsTweetsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public twitterSrv: TwitterService) {
     this._user = (navParams.data != null) ? navParams.data.user : null;
+    
   }
 
   ionViewWillEnter() {
@@ -25,6 +26,7 @@ export class TrumpsTweetsPage {
     this.twitterSrv.getRecentTweets(5)
       .subscribe(data => this.tweets = data);
   }
+
 
   openDashboard() {
     this.navCtrl.pop();
