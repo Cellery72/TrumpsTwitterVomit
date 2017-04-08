@@ -69,9 +69,13 @@ export class DashboardPage {
         icon: 'http://example.com/icon.png',
         at: at,
         every: 'day',
-        sound: 'file://sound.mp3'
+        sound: 'res://platform_default'
       }
       notifications.push(newNotification)
+    })
+     this.notifications.cancelAll().then(() => {
+        this.notifications.schedule(notifications);
+        notifications = [];
     })
 
     this.nativeStorage.setItem('currentUser', {id: this._user.id, userName: this._user.userName, token: this._user.secret, secret: this._user.token, notifications: notifications})
@@ -80,10 +84,7 @@ export class DashboardPage {
         error => console.error('Error updating user', error)
     );
 
-    this.notifications.cancelAll().then(() => {
-        this.notifications.schedule(notifications);
-        notifications = [];
-    })
+   
  
 
 
