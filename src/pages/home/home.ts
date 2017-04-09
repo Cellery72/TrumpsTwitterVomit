@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 import { DashboardPage } from '../dashboard/dashboard';
 import { HelpModal } from './modal/help-modal.component';
 import { TwitterConnect } from '@ionic-native/twitter-connect';
-import { TwitterUser } from '../../models/twitteruser.model';
 import { NativeStorage } from '@ionic-native/native-storage';
 
 @Component({
@@ -33,10 +32,6 @@ export class HomePage {
     }
 
   login() {
-    //temp user for web testing
-    //let temp: TwitterUser = new TwitterUser(1, "Cellery72", "secret", "token", "");
-    //this.navCtrl.push(DashboardPage, { "user": temp });
-
     //using twitter connect on mobile
     this.showLoading();
     this.twitter.login().then((data) => {
@@ -46,7 +41,12 @@ export class HomePage {
     })
   }
 
-
+/**
+ * This function will take the res data from twitter login methods
+ * and will add the data to a currentUser object,then store it in native storage
+ * once the user has been stored, they are redirected to the dashboard screen
+ * @param response - data returned from twitter login method
+ */
   onSuccess(response) {
     console.log("success:", response)
     this.nativeStorage.setItem('currentUser', response)
@@ -92,13 +92,5 @@ export class HomePage {
     helpModal.present();
   }
 
-  public checkUserCredentials(): void {
-    let user: TwitterUser;
-    this.nativeStorage.getItem('currentUser')
-      .then(
-      data => user = data,
-      error => console.log(error)
-      );
-  }
 }
 

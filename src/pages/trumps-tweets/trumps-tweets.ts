@@ -5,7 +5,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TwitterService } from '../../providers/twitter.service';
-
+import { DashboardPage } from '../dashboard/dashboard';
 import { TwitterUser } from '../../models/twitteruser.model';
 
 @Component({
@@ -29,7 +29,7 @@ export class TrumpsTweetsPage {
 
 
   openDashboard() {
-    this.navCtrl.pop();
+    this.navCtrl.push(DashboardPage)
   }
 
 }

@@ -3,7 +3,6 @@ export class TimedNotification {
   // private variables
   private _id: number;
   private _sound: boolean;
-  private _vibrate: boolean;
   private _time: string;
 
   // default constructor
@@ -23,9 +22,6 @@ export class TimedNotification {
   public soundEnabled(): boolean {
     return this._sound;
   }
-  public vibrateEnabled(): boolean {
-    return this._vibrate;
-  }
   public getTime(): string {
     return this._time;
   }
@@ -36,9 +32,6 @@ export class TimedNotification {
   }
   public setSound(enabled: boolean): void {
     this._sound = enabled;
-  }
-  public setVibrate(enabled: boolean): void {
-    this._vibrate = enabled;
   }
   public setTime(updatedTime: string) {
     this._time = updatedTime;

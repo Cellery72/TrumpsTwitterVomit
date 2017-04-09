@@ -1,21 +1,15 @@
 <ion-row padding-top>
     <ion-col width-100>
         <ion-item>
-            <ion-label text-left>Notification {{note._id}}</ion-label>
+            <ion-label text-left>What Time?</ion-label>
             <ion-datetime displayFormat="HH:mm" [(ngModel)]="note._time"></ion-datetime>
         </ion-item>
     </ion-col>
 </ion-row>
 <ion-row padding-bottom>
-    <ion-col width-50>
+    <ion-col width-100>
         <ion-item>
-            <ion-checkbox [(ngModel)]="note._vibrate"></ion-checkbox>
-            <ion-label>Vibrate</ion-label>
-        </ion-item>
-    </ion-col>
-    <ion-col width-50>
-        <ion-item>
-            <ion-checkbox [(ngModel)]="note._sound"></ion-checkbox>
+            <ion-checkbox [(ngModel)]="note._sound" (change)="note.setSound(note._sound)"></ion-checkbox>
             <ion-label>Sound</ion-label>
         </ion-item>
     </ion-col>
