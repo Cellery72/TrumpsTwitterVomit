@@ -17,14 +17,8 @@
     <!-- Notification selection - drop down list -->
     <ion-col width-100>
         <ion-item>
-            <ion-label>Notifications</ion-label>
-            <ion-select [(ngModel)]="notification_count" (ionChange)="updateNotifications()">
-                <ion-option value="0">None!</ion-option>
-                <ion-option value="1">1</ion-option>
-                <ion-option value="2">2</ion-option>
-                <ion-option value="3">3</ion-option>
-                <ion-option value="4">4</ion-option>
-            </ion-select>
+            <ion-label>Enable Daily Notification</ion-label>
+            <ion-checkbox color="dark" [(ngModel)]="enableNotification"></ion-checkbox>
         </ion-item>
     </ion-col>
 
@@ -34,9 +28,7 @@
         </ion-row>
 
         <!-- Notfication components representing the number of notifications selected in above DDL -->
-        <div class="the_notifications" *ngFor="let nte of _notes" [hidden]="!notification_count">
-            <notification [note]="nte"></notification>
-        </div>
+            <notification [note]="_note" [hidden]="!enableNotification"></notification>
 
         <!-- DONE button - opens Trump's Tweets page -->
         <ion-row padding>
