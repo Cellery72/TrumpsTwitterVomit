@@ -48,7 +48,8 @@ export class DashboardPage {
             this.enableNotification = false;
           }       
         }
-      )
+        this.notification_count = this._notes.length;
+      });
   }
 /**
  * This function will take a string interpretation of a time and split it up into an array 
@@ -65,6 +66,7 @@ export class DashboardPage {
     let newDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), hours - 4, minutes)
     return newDate;
   }
+
 
 /**
  * This function will create a new local notification object based off of the note stored on this page.
@@ -83,16 +85,52 @@ export class DashboardPage {
         every: 'day',
         sound: this._note.soundEnabled() ? 'res://platform_default' : null
       }
-    //cancel previous notification and then schedule new one
-     this.notifications.cancelAll().then(() => {
-        this.notifications.schedule(newNotification);
-    })
-  //update current user with new notification
-    this.nativeStorage.setItem('currentUser', {id: this._user.id, userName: this._user.userName, token: this._user.secret, secret: this._user.token, notification: newNotification})
+
+      // Add the notification to our array
+      notifications.push(newNotification);
+
+    });
+
+    // save the currentUser property in local storage
+    this.nativeStorage.setItem('currentUser', { id: this._user.id, userName: this._user.userName, token: this._user.secret, secret: this._user.token, notifications: notifications })
       .then(
-        () => console.log('Updated user successfully'),
-        error => console.error('Error updating user', error)
-    );
+      () => console.log('Updated notification\'s successfully'),
+      error => console.error('Error updating user', error)
+      );
+    // schedule the array of notifications we've created
+    this.notifications.schedule(notifications);
+
+    //to check scheduled notifications - print them to console
+    this.notifications.getScheduledIds()
+      .then(ids => {
+        ids.forEach(id => {
+          this.notifications.get(id)
+            .then(notif => console.log(JSON.stringify(notif)))
+        })
+      })
+  }
+  // Update the Notification Array upon Dropdown selection change
+  private updateNotifications(): void {
+    // grab the lastCount of notifications and the new count of notifications
+    let lastCount = this._notes.length;
+    let newCount = this.notification_count;
+
+    // add/remove appropriate amount of notifications from the array
+    if (newCount > lastCount) {
+      let iterations = newCount - lastCount;
+      for (var num = 0; num < iterations; num++) {
+        let newNotification = new TimedNotification(this._notes.length + 1);
+        console.log(JSON.stringify(newNotification))
+        this._notes.push(newNotification);
+      }
+    }
+    else if (lastCount > newCount) {
+      let iterations = lastCount - newCount;
+
+      for (var num = 0; num < iterations; num++) {
+        this._notes.pop();
+      }
+    }
   }
 
   /**
@@ -100,7 +138,7 @@ export class DashboardPage {
    * the home page login screen
    */
   private logout(): void {
-    //clear all notifications stored
+    //cancel all notifications stored
     this.notifications.cancelAll()
       .then(
         () => console.log('Cleared notification'),
@@ -109,8 +147,8 @@ export class DashboardPage {
     //remove currentUser from storage then pop navCtrl
     this.nativeStorage.clear()
       .then(
-        () => console.log('User Data removed'),
-        error => console.log('Error - ' + error)
+      () => console.log('User Data removed'),
+      error => console.log('Error - ' + error)
       )
     this.navCtrl.popToRoot();
 
@@ -118,7 +156,7 @@ export class DashboardPage {
 
 
   /**
-   * This fucking will call the setNotifications function and when complete will 
+   * This function will call the setNotifications function and when complete will 
    * direct the user to the trumps tweets display page
    */
   private save(): void {
