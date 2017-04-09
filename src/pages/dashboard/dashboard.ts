@@ -1,6 +1,9 @@
-//         File: Home Page Component
-//         Date: 03-25-2017
-//  Description: The home page is the first screen upon opening the app.
+/**
+ * File: Home Page Component
+ * Date: 03-25-2017
+ * Description: The home page is the first screen upon opening the app.
+ * Authors: Justin Ellery and Amanda Field
+ */ 
 
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
@@ -109,7 +112,7 @@ export class DashboardPage {
         () => console.log('User Data removed'),
         error => console.log('Error - ' + error)
       )
-    this.navCtrl.pop();
+    this.navCtrl.popToRoot();
 
   }
 

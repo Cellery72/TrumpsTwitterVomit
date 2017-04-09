@@ -1,11 +1,14 @@
-//         File: Home Page Component
-//         Date: 03-25-2017
-//  Description: The home page is the first screen upon opening the app.
-//               It contains a twitter login button & informative modal.
+/**
+ * File: Home Page Component
+ * Date: 04-05-2017
+ * Description: The home page is the first screen upon opening the app.
+ * Authors: Justin Ellery and Amanda Field
+ */      
 
 import { NavController, ModalController, AlertController, LoadingController, Loading } from 'ionic-angular';
 import { Component } from '@angular/core';
 import { DashboardPage } from '../dashboard/dashboard';
+import { TrumpsTweetsPage } from '../trumps-tweets/trumps-tweets';
 import { HelpModal } from './modal/help-modal.component';
 import { TwitterConnect } from '@ionic-native/twitter-connect';
 import { NativeStorage } from '@ionic-native/native-storage';
@@ -25,7 +28,7 @@ export class HomePage {
       .then(
         user => {
           console.log('Welcome ' + JSON.stringify(user.userName))
-          this.navCtrl.push(DashboardPage)
+          this.navCtrl.push(TrumpsTweetsPage)
         },
         error => console.log('User not found')
       );

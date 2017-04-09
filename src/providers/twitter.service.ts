@@ -13,20 +13,21 @@ export class TwitterService {
 
 
   // Get Requests
-
-
-  // Returns all the tweets from the database
-  // route: /tweets/
-  // params: none
+  /**
+   * Returns all the tweets from the database
+   * route: /tweets
+   */
   getAllTweets() {
     return this.http.get(this.baseUrl + 'tweets/')
       .map(data => data.json())
       .catch(this.handleError);
   }
 
-  // Returns recent tweets, the number is specified by the count parameter
-  // route: /tweets/recent
-  // params: count: number (number of recent tweets to return)
+  /**
+   * Returns recent tweets, the number is specified by the count parameter
+   * route: /tweets/recent
+   * @param count - number representing amount of recent tweets to return
+   */
   getRecentTweets(count: number) {
     // create param object, add date number
     let params: URLSearchParams = new URLSearchParams();
@@ -42,9 +43,11 @@ export class TwitterService {
       .catch(this.handleError);
   }
 
-  // Returns the recent tweets since a date specified via parameter
-  // route: /tweets/since
-  // params: _date: number (number of seconds past that epoch that represents a time of day)
+  /**
+   * Returns the recent tweets since a date specified via parameter
+   * route: /tweets/since
+   * @param _date a number representing the seconds passed in a time of dat
+   */
   getTweetsSince(_date: number) {
 
     // debugging 101
