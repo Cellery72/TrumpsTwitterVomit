@@ -1,8 +1,8 @@
 <!-- Navbar with Username & logout button-->
 <ion-header>
     <ion-navbar color="custom2" hideBackButton="true">
-        <ion-title text-center>
-            {{_user && pluralizeUsername(_user.userName)}} Dashboard
+        <ion-title text-center id="dashboard-title">
+            {{_user && _user.userName}}
         </ion-title>
         <ion-buttons end>
             <button ion-button (click)="logout()">

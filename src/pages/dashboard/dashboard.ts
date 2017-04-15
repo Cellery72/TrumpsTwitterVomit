@@ -130,15 +130,4 @@ export class DashboardPage {
     this.navCtrl.push(TrumpsTweetsPage);
 
   }
-
-
-  /**
-   * This function will add pluralization to a given string
-   * @param username - string to be pluralized
-   */
-  private pluralizeUsername(username: string): string {
-    // determine the char sequence to pluralize usernames
-    let returnVal = (username.substr(username.length - 1).toLowerCase() == "s") ? "'" : "'s";
-    return username + returnVal;
-  }
 }
